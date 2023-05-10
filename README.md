@@ -1,2 +1,10 @@
 # API-formulario-cep
- trabalho utilizando api para cep, consumindo e tratando dados usando api
+ 
+Trabalho utilizando api para cep, consumindo e tratando dados usando api
+
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **API-formulario-cep**
+| :label: Tecnologias | HTML, CSS, Javascript (tecnologias utilizadas)
+| :rocket: URL         | 
+
