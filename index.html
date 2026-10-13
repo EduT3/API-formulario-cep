@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -71,10 +71,9 @@
     </section>
 
     <main class="principal">
-        <h2 class="principal__titulo">Dados do cadastro</h2>
+        <h2 class="principal__titulo">Dados do cadastro</h2><p class="aviso-demo">Demonstração educacional. Use dados fictícios. Apenas o CEP é consultado no ViaCEP; nenhum cadastro é enviado.</p>
 
-        <form class="principal__formulario" id="formulario" target="_blank"
-            onsubmit="location.replace('./cadastro-finalizado.html')">
+        <form class="principal__formulario" id="formulario">
             <h3 class="principal__subtitulo">Dados pessoais</h3>
             <div class="formulario__campo">
                 <label class="campo__etiqueta" for="nome">Nome Completo</label>
@@ -100,8 +99,8 @@
 
             <div class="formulario__campo">
                 <label class="campo__etiqueta" for="cep">CEP</label>
-                <input name="cep" id="cep" class="campo__escrita" required />
-                <div id="erro"></div>
+                <input name="cep" id="cep" inputmode="numeric" autocomplete="postal-code" maxlength="9" pattern="[0-9]{5}-?[0-9]{3}" aria-describedby="erro" class="campo__escrita" required />
+                <div id="erro" role="status"></div>
             </div>
 
             <div class="formulario__campo">
